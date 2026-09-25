@@ -67,3 +67,40 @@ The page also includes Year and Attack Type slicers, allowing users to interacti
 ### Advanced Visualization
 
 The Security Vulnerability treemap was included as an advanced visualization. Unlike a standard bar chart, the treemap uses the size of each rectangular area to represent the number of incidents associated with each vulnerability type. This makes it possible to quickly identify the most prominent vulnerability categories while using dashboard space efficiently.
+
+
+## Page 3 – Financial & User Impact
+
+![Financial and User Impact Dashboard](page3-financial-user-impact.png)
+
+### Overview
+
+The Financial & User Impact page focuses on understanding the consequences of cybersecurity incidents. While the previous pages examine the overall threat landscape and vulnerability patterns, this page analyzes the financial impact and the number of users affected by cybersecurity incidents.
+
+The page also includes Year and Attack Type slicers, allowing users to interactively filter the visualizations and analyze the impact for specific periods or attack categories.
+
+### Visualizations
+
+- **Financial Loss vs Affected Users:** A scatter plot used to examine the relationship between two numerical variables: Number of Affected Users and Financial Loss. Attack Type is used to distinguish the different attack categories. The visualization helps identify patterns between user impact and financial impact without assuming a causal relationship.
+
+- **Financial Loss by Attack Type:** A clustered column chart comparing the total financial loss associated with each attack type. Attack Type is used as the category and Sum of Financial Loss is used as the numerical measure.
+
+- **Affected Users by Year:** A line chart showing how the total number of affected users changes from 2015 to 2024. A line chart was selected because Year is a time-based variable and the visualization makes changes and trends over time easier to identify.
+
+- **Financial Loss by Target Industry:** A horizontal bar chart comparing the total financial loss recorded across different target industries. The horizontal layout improves the readability of longer industry names and allows the industries to be compared easily.
+
+- **Year Slicer:** Allows the impact analysis to be filtered according to a selected year.
+
+- **Attack Type Slicer:** Allows the user to analyze the financial and user impact associated with a specific cyberattack category.
+
+### Key Observations
+
+- DDoS recorded the highest total financial loss in the dataset at approximately 28K million dollars, followed by Phishing at approximately 27K million dollars.
+- IT recorded the highest total financial loss among the target industries at approximately 25K million dollars.
+- Banking recorded the second-highest total financial loss at approximately 23K million dollars.
+- The Affected Users by Year visualization shows how user impact varies across the 2015–2024 period.
+- The scatter plot allows the relationship between the number of affected users and financial loss to be explored across different attack types.
+
+### Visualization Design
+
+Amber was used for the financial-loss visualizations to visually distinguish monetary impact from the blue and cyan colors used for general cybersecurity metrics. This maintains a consistent cybersecurity theme while making the financial impact easier to identify.
