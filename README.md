@@ -101,6 +101,52 @@ The page also includes Year and Attack Type slicers, allowing users to interacti
 - The Affected Users by Year visualization shows how user impact varies across the 2015–2024 period.
 - The scatter plot allows the relationship between the number of affected users and financial loss to be explored across different attack types.
 
+
+## Page 4 – Response & Key Insights
+
+![Response and Key Insights Dashboard](page4-response-key-insights.png)
+
+### Overview
+
+The Response & Key Insights page is the final stage of the cybersecurity analysis. It focuses on incident resolution time, the distribution of attack types across industries, and the major patterns identified throughout the dashboard.
+
+This page brings together response-related metrics and key findings to provide a concise conclusion to the analysis.
+
+### Visualizations
+
+- **Attack Type Distribution Across Industries:** A matrix visualization comparing Target Industry and Attack Type. Target Industry is placed in the rows, Attack Type in the columns, and Count of Attack Type is used as the value. This allows multiple attack types and industries to be compared simultaneously.
+
+- **Matrix Heatmap:** Conditional background formatting is applied to the matrix to create a heatmap effect. Higher incident counts are highlighted more strongly, making important industry and attack-type combinations easier to identify without reading every individual value.
+
+- **Average Resolution Time by Attack Type:** A clustered column chart comparing the average incident resolution time across different cyberattack categories. Average is used instead of Sum because it provides a more meaningful comparison of the typical resolution time for each attack type.
+
+- **Average Resolution Time by Defense Mechanism:** A horizontal bar chart comparing the average incident resolution time associated with different defense mechanisms. The visualization represents associations in the recorded data and is not intended to measure the effectiveness of individual defense mechanisms.
+
+- **Year Slicer:** Allows the response analysis to be filtered for a selected year.
+
+- **Attack Type Slicer:** Allows the user to focus the analysis on a specific attack category.
+
+### Key Insights
+
+- **Attack Pattern:** DDoS recorded the highest number of incidents with 531, closely followed by Phishing with 529.
+- **Industry Pattern:** IT recorded the highest number of incidents with 478, followed by Banking with 445.
+- **Industry-Specific Pattern:** Phishing was the most frequent attack type within Banking, with 96 recorded incidents.
+- **Response Time:** Malware had the highest average resolution time at approximately 37.1 hours, while DDoS had the lowest at approximately 35.7 hours.
+- The differences in average resolution time across defense mechanisms are relatively small and should not be interpreted as evidence that one defense mechanism is more effective than another.
+
+### Advanced Visualization
+
+The Industry × Attack Type matrix uses conditional formatting to create a heatmap-style visualization. The combination of a cross-tabular matrix and color intensity makes it possible to identify concentrations of cybersecurity incidents across industries and attack types quickly.
+
+For example, Banking recorded 96 Phishing incidents, while IT recorded 91 DDoS incidents. These higher values become more visually prominent through the conditional formatting.
+
+### Dashboard Conclusion
+
+The four-page dashboard follows a structured analytical story:
+
+**Overview → Threats & Vulnerabilities → Financial & User Impact → Response & Key Insights**
+
+The analysis begins with the overall cybersecurity landscape, moves into the sources and vulnerabilities associated with incidents, evaluates their financial and user impact, and concludes by examining incident response and summarizing the major patterns identified in the dataset.
 ### Visualization Design
 
 Amber was used for the financial-loss visualizations to visually distinguish monetary impact from the blue and cyan colors used for general cybersecurity metrics. This maintains a consistent cybersecurity theme while making the financial impact easier to identify.
